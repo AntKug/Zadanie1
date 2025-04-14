@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="nav.js"></script>
+    <title>Float Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+
+      header,
+      nav,
+      main,
+      aside,
+      footer {
+        padding: 0.5rem;
+      }
+
+      header {
+        background: #22c55e;
+        height: 60px;
+      }
+
+      nav {
+        background: #ef4444;
+        width: 10%;
+        float: left;
+        height: 300px;
+      }
+
+      aside {
+        background: #eab308;
+        width: 10%;
+        float: right;
+        height: 300px;
+      }
+
+      main {
+        background: #ddd;
+        width: 80%;
+        float: left;
+        height: 300px;
+      }
+
+      footer {
+        background: #8b5cf6;
+        height: 100px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>HEADER</header>
+    <nav>NAV</nav>
+    <aside>ASIDE</aside>
+    <main>MAIN</main>
+    <footer>FOOTER</footer>
+  </body>
+</html>
