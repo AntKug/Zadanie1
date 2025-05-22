@@ -15,15 +15,14 @@
         margin: 0;
         font-family: sans-serif;
         font-weight: 600;
-        height: 460px;
-
+        min-height: 460px;
         display: grid;
         grid-template-areas:
           "header header header"
           "nav main aside"
           "footer footer footer";
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-rows: 60px 300px 100px;
       }
 
       header,
@@ -35,30 +34,28 @@
       }
 
       header {
-        grid-area: header;
         background: #22c55e;
-        height: 60px;
+        grid-area: header;
       }
 
       nav {
-        grid-area: nav;
         background: #ef4444;
+        grid-area: nav;
       }
 
       main {
-        grid-area: main;
         background: #ddd;
+        grid-area: main;
       }
 
       aside {
-        grid-area: aside;
         background: #eab308;
+        grid-area: aside;
       }
 
       footer {
-        grid-area: footer;
         background: #8b5cf6;
-        height: 100px;
+        grid-area: footer;
       }
     </style>
   </head>
